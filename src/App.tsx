@@ -8,10 +8,10 @@ function App() {
   return (
     <>
       <div className='app-wrapper'>
-        <Router>
+        <Router basename="/MarkLagarta-Portfolio">
           <Navbar />
           <Routes>
-            <Route path='/MarkLagarta-Portfolio' element={<Home/>} />
+            <Route path='/' element={<Home/>} />
           </Routes>
         </Router>
       </div>
