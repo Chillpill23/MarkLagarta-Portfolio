@@ -1,0 +1,320 @@
+.home-container{
+  background-color: var(--clr--base--200);
+}
+
+/* ====== Home Hero Section ====== */
+
+/* Container for hero section */
+.hero-container{
+  display: flex;
+  flex-wrap: wrap;
+  height:91vh;
+  width: 100%;
+}
+
+.hero-wrapper{
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  height:90vh;
+  width: 100%;
+}
+
+.hero-caption{
+  display: flex;
+  flex-direction: column;
+  flex:4;
+  padding:9em 3em;
+  z-index: 2;
+}
+
+.hero-caption :where(h2,h3,h4,h5,h6,p){
+  margin:0.5em 0;
+  padding:0.5em 0;
+}
+
+.hero-caption :where(p){
+  width: 90%;
+}
+
+/* Image for Hero section */
+
+.hero-image{
+  z-index: 2;
+  flex:3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-image img{
+  width: 90%;
+  height: 80%;
+}
+
+/* ====== Home Services Section ====== */
+
+/* Container for service section */
+.services-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin:5em 0em;
+}
+
+.services-caption{
+  flex:1;
+  padding:0 1.3em;
+  text-align: center;
+}
+
+/* Container for Service cards */
+.services-cards{
+  flex:1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding:2em 3em;
+}
+
+
+/* Card for Services section */
+.services-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding:0.5em;
+  width: 30%;
+  min-width: 200px;
+  text-align: center;
+}
+
+.services-card img{
+  width: 60%;
+  height: 50%;
+  margin: 0.5em 0;
+}
+
+.services-card :where(h4,p){
+  margin:0.1em 0;
+}
+
+.services-card :where(p){
+  width: 80%;
+  letter-spacing: 1px;
+}
+
+
+
+
+/* ====== Home Skills Section ====== */
+
+.skills-container{
+  width: 100%;
+  margin:5em 0;
+}
+
+.skills-caption{
+  text-align: center;
+}
+
+.skills-cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding:2em 3em;
+  gap:1.5em;
+}
+
+.skill-card{
+  gap:1em;
+  display: flex;
+  align-items: center;
+  width: 30%;
+  min-width: 300px;
+  padding:2em;
+  border-radius: 8px;
+  background-color:rgba(127, 127, 127, 0.3);
+}
+
+.skill-card img{
+  height:100%;
+  width: 20%;
+}
+
+.card-info{
+  width: 80%;
+}
+
+
+
+/* ====== Home Projects Section ====== */
+
+.projects-container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  margin:5em 0;
+}
+
+.projects-caption{
+  text-align: center;
+}
+
+.projects-cards{
+  flex:1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding:2em 7em;
+  gap:1.5em;
+}
+
+.projects-card{
+  flex:1;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 400px;
+  gap:0.5em;
+}
+
+.projects-card img{
+  flex:1;
+  padding:1em;
+  height: 100%;
+  width: 55%;
+}
+
+.projects-info{
+  flex:2;
+  padding:1em;
+}
+
+.projects-info :where(.caption){
+  background: -webkit-linear-gradient(right, var(--clr--accent--100), var(--clr--accent--200));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent
+}
+
+.projects-info :where(h1,h2,h3,h4,h5,h6,p){
+  margin:1em 0;
+}
+
+.projects-info img{
+  height: 60px;
+  width: 10%;
+  min-width: 50px;
+  border-radius: 8px;
+  margin:0 0.5em;
+  background-color:rgba(127, 127, 127, 0.3);
+}
+
+
+
+
+/* ====== Media Queries ====== */
+
+/* Smaller Desktops */
+@media screen and (max-width: 1200px){
+  .hero-image img{
+    width: 100%;
+    height: 70%;
+  }
+
+  .services-card{
+    width: 50%;
+    margin:0.5em 0;
+  }
+
+  .projects-cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:2em 2em;
+    gap:1.5em;
+  }
+  
+
+  .projects-card img{
+    flex:1;
+    padding:1em;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .projects-info{
+    flex:2;
+    padding:1em;
+  }
+  
+  .projects-info :where(img){
+    max-width:65px;
+  }
+  
+}
+
+/* Tablets */
+@media screen and (max-width: 800px){
+  .emphasize{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:rgba(0, 0, 0, 0.3);
+    padding:2em 1em;
+    width: 90%;
+    border-radius: 8px;
+    width: 100%;
+    height:90%;
+  }
+
+  .hero-caption{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding:0 3em;
+  }
+
+  .hero-image{
+    display: none;
+  }
+
+
+  /* ====== Home Services Section ====== */
+
+  .services-card{
+    width: 100%;
+    margin:0.5em 0;
+  }
+  
+  .services-card img{
+    width: 90%;
+    height: 80%;
+    margin: 0.5em 0;
+  }
+  
+  .services-card :where(p){
+    width: 100%;
+  }
+  
+}
+
+/* Phones */
+@media screen and (max-width: 500px){
+  .hero-caption{
+    padding: 0 2em;
+  }
+
+  .services-card img{
+    width: 100%;
+    height: 100%;
+    margin: 0.5em 0;
+  }
+}

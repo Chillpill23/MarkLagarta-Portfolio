@@ -1,0 +1,262 @@
+.navbar-container{
+    position: sticky;
+    top: 0;
+    z-index:3;
+    display: flex;
+    align-items: center;
+    height:10vh;
+    max-height: 64px;
+    width: 100%;
+    border-bottom: 1px solid var(--clr--neutral--100);
+    background-color: var(--clr--base--200);
+}
+
+/* ====== Navbar Menu ====== */
+
+.navbar-menu{
+    display: none;
+    height: 100%;
+    width: 5vw;
+    min-width:50px;
+    font-size: var(--fs--caption);
+    color:var(--clr--accent--400);
+    padding:0.5em;
+}
+
+/* ====== Navbar Logo ====== */
+
+.navbar-logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    width:15vw;
+    gap:0.8em;
+    padding:0 1em;
+}
+
+.navbar-logo :where(img){
+    height: 70%;
+    width: 20%;
+    max-width: 50px;
+}
+
+.logo-name{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background: -webkit-linear-gradient(right, var(--clr--accent--100), var(--clr--accent--200));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font: var(--fs--caption) var(--font--secondary);
+    letter-spacing: 0.3em;
+}
+
+/* ====== Navbar Links ====== */
+
+.menu-active{
+    left:0;
+    transition:0.5s ease;
+}
+
+.menu-inactive{
+    left:-100%;
+    transition:0.5s ease;
+}
+
+.navbar-links, .nav-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Link container */
+.navbar-links{
+    width:65vw;
+    height: 100%;
+    color:var(--clr--text--100);
+    font: var(--fs--body) var(--font--main);
+    min-width: 280px;
+}
+
+/* Individual links */
+.nav-link{
+    margin:0 0.5em;
+    gap:0.5em;
+    padding: 0.3em 0.5em;
+    background-color:transparent;
+    cursor:pointer;
+}
+
+.nav-link i{
+    background: -webkit-linear-gradient(top, var(--clr--accent--100), var(--clr--accent--200));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.link-active{
+    border-bottom: 2px solid var(--clr--accent--400);
+}
+
+/* ====== Navbar Socials ====== */
+
+.navbar-social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width:20vw;
+    border-left:2px solid var(--clr--accent--400);
+}
+
+.social-link{
+    display: flex;
+    justify-content: center;
+    color:var(--clr--accent--300);
+    font-size: var(--fs--body);
+    width: 15%;
+    margin:0.3em;
+    transition: all 0.5s ease;
+}
+
+.social-link i{
+    font-size: var(--fs--subcaption);
+}
+
+.social-link a{
+    text-align: center;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    transition: color 0s 0.25s ;
+    transition-timing-function: var(--timing-function);
+}
+
+/* Bar for the animation */
+.social-link a::before {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    content: '';
+    top: 50%;
+    transform: translate(-101%, -50%);
+    height: 50%;
+    z-index: 1;
+    background-color:var(--clr--accent--400);
+    transition: transform 0.5s var(--timing-function);
+  }
+
+  /* For Name Display */
+  .social-link a::after {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    content: attr(data-name);
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: var(--clr--accent--400);
+    opacity: 0;
+    transition: opacity 0s 0.25s var(--timing-function);
+  }
+
+.social-link :where(i){
+    color:var(--clr--accent--400);
+}
+
+
+
+
+
+
+
+/* ====== Hover effects ====== */
+
+.social-link:hover{
+    width:50%;
+    transition:0.5s ease;
+}
+
+.social-link:hover a{
+    color: transparent;
+    width: 100%;
+}
+
+.social-link a:hover i {
+    color: transparent;
+}
+
+.social-link a:hover::before {
+    transform: translate(101%, -50%);
+}
+
+.social-link a:hover::after {
+    opacity: 1;
+}
+
+.social-link[data-animation="to-left"] a::before {
+    transform: translate(101%, -50%);
+}
+  
+.social-link[data-animation="to-left"] a:hover::before {
+    transform: translate(-101%, -50%);
+}
+
+/* ====== Media Queries ====== */
+
+/* Smaller Desktops */
+@media screen and (max-width: 1200px){
+
+    /* Displays the Menu Icon */
+    .navbar-menu{
+        display: block;
+    }
+
+    .navbar-logo{
+        width:60vw;
+    }
+
+    .navbar-social{
+        width: 35vw;
+    }
+
+    /* Responsive navigation bar */
+    .navbar-links{
+        padding:2em 0;
+        position: absolute;
+        flex-flow: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        top:4rem;
+        background-color: rgba(255, 255, 255, .15);  
+        backdrop-filter: blur(2em);
+        height: 90vh;
+        width: 30%;
+        z-index: 1;
+        font-size: var(--fs--subcaption);
+    }
+
+    .nav-link{
+        justify-content: flex-start;
+        height:auto;
+        padding:1em;
+        width: 100%;
+        margin:0em;
+    }
+}
+
+/* Tablets */
+@media screen and (max-width: 800px){
+    .navbar-links{
+        width: 40%;
+    }
+}
+
+/* Phones */
+@media screen and (max-width: 500px){
+
+}
