@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/MarkLagarta-Portfolio/static/css/main.a467c658.css",
+    "main.js": "/MarkLagarta-Portfolio/static/js/main.8d59948a.js",
+    "static/media/project-1.png": "/MarkLagarta-Portfolio/static/media/project-1.cf5f29ca97e38a3148cd.png",
+    "static/media/UI.png": "/MarkLagarta-Portfolio/static/media/UI.b4a1255fe0d7c16d5c53.png",
+    "static/media/Team.png": "/MarkLagarta-Portfolio/static/media/Team.04f699e8a44fba13f1e4.png",
+    "static/media/Responsive.png": "/MarkLagarta-Portfolio/static/media/Responsive.a5d73ace4148b9380a2a.png",
+    "static/media/Git.png": "/MarkLagarta-Portfolio/static/media/Git.b80f42cead702b74364d.png",
+    "static/media/photoshop-1.png": "/MarkLagarta-Portfolio/static/media/photoshop-1.f91f61a7fd7ce669dc8d.png",
+    "static/media/profile-2.png": "/MarkLagarta-Portfolio/static/media/profile-2.eab6df31b0a417e49395.png",
+    "static/media/profile-3.png": "/MarkLagarta-Portfolio/static/media/profile-3.ef45b8025fe293b892d0.png",
+    "static/media/materialUI-1.png": "/MarkLagarta-Portfolio/static/media/materialUI-1.8ef1fb714e5005212fdb.png",
+    "static/media/Logo.png": "/MarkLagarta-Portfolio/static/media/Logo.ad4ff8a42eb070e9b6ab.png",
+    "static/media/blender-1.png": "/MarkLagarta-Portfolio/static/media/blender-1.8014a08b16d1b6cd96c4.png",
+    "static/media/react-1.png": "/MarkLagarta-Portfolio/static/media/react-1.4494004c20deaff6f2d7.png",
+    "static/media/css-1.png": "/MarkLagarta-Portfolio/static/media/css-1.3b0254a1e56471709a29.png",
+    "static/media/html-1.png": "/MarkLagarta-Portfolio/static/media/html-1.7f5fadebe0937b64f43c.png",
+    "static/media/ts-1.png": "/MarkLagarta-Portfolio/static/media/ts-1.29073194eeda5803e7f3.png",
+    "index.html": "/MarkLagarta-Portfolio/index.html",
+    "main.a467c658.css.map": "/MarkLagarta-Portfolio/static/css/main.a467c658.css.map",
+    "main.8d59948a.js.map": "/MarkLagarta-Portfolio/static/js/main.8d59948a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a467c658.css",
+    "static/js/main.8d59948a.js"
+  ]
+}
