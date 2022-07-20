@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/MarkLagarta-Portfolio/static/css/main.a467c658.css",
-    "main.js": "/MarkLagarta-Portfolio/static/js/main.bd63bb9d.js",
+    "main.js": "/MarkLagarta-Portfolio/static/js/main.ef208f7c.js",
     "static/media/project-1.png": "/MarkLagarta-Portfolio/static/media/project-1.cf5f29ca97e38a3148cd.png",
     "static/media/UI.png": "/MarkLagarta-Portfolio/static/media/UI.b4a1255fe0d7c16d5c53.png",
     "static/media/Team.png": "/MarkLagarta-Portfolio/static/media/Team.04f699e8a44fba13f1e4.png",
@@ -19,10 +19,10 @@
     "static/media/ts-1.png": "/MarkLagarta-Portfolio/static/media/ts-1.29073194eeda5803e7f3.png",
     "index.html": "/MarkLagarta-Portfolio/index.html",
     "main.a467c658.css.map": "/MarkLagarta-Portfolio/static/css/main.a467c658.css.map",
-    "main.bd63bb9d.js.map": "/MarkLagarta-Portfolio/static/js/main.bd63bb9d.js.map"
+    "main.ef208f7c.js.map": "/MarkLagarta-Portfolio/static/js/main.ef208f7c.js.map"
   },
   "entrypoints": [
     "static/css/main.a467c658.css",
-    "static/js/main.bd63bb9d.js"
+    "static/js/main.ef208f7c.js"
   ]
 }
